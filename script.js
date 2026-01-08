@@ -111,11 +111,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (statsSection) {
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
+                // Lower threshold to 0.1 so it triggers as soon as 10% is visible
                 if (entry.isIntersecting) {
                     animateStats();
+                    // Optional: Stop observing once triggered
+                    statsObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.1 });
 
         statsObserver.observe(statsSection);
     }
