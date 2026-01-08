@@ -109,18 +109,36 @@ document.addEventListener('DOMContentLoaded', function () {
     const statsSection = document.querySelector('.stats');
 
     if (statsSection) {
+        // 1. Try Intersection Observer (Modern)
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                // Lower threshold to 0.1 so it triggers as soon as 10% is visible
                 if (entry.isIntersecting) {
                     animateStats();
-                    // Optional: Stop observing once triggered
                     statsObserver.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.1 });
 
         statsObserver.observe(statsSection);
+
+        // 2. Fallback: Simple Scroll Listener (Robustness for all devices)
+        window.addEventListener('scroll', () => {
+            if (statsAnimated) return;
+
+            const rect = statsSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Trigger if top of section is within view (or close to it)
+            if (rect.top <= windowHeight - 50) {
+                animateStats();
+            }
+        });
+
+        // 3. Fallback: Trigger immediately if already visible on load
+        const rect = statsSection.getBoundingClientRect();
+        if (rect.top <= window.innerHeight) {
+            animateStats();
+        }
     }
 
     // ===== Testimonials Carousel =====
