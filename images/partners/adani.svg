@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
+    <text x="150" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="50" text-anchor="middle" fill="#2b5d9b">adani</text>
+    <line x1="75" y1="55" x2="225" y2="55" stroke="#a0a0a0" stroke-width="2" />
+    <text x="150" y="80" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#666666">Solar</text>
+</svg>

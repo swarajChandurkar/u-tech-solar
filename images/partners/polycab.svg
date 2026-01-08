@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
+    <circle cx="40" cy="50" r="15" fill="none" stroke="#ed1c24" stroke-width="5" />
+    <line x1="40" y1="35" x2="40" y2="50" stroke="#ed1c24" stroke-width="5" />
+    <text x="170" y="60" font-family="Arial Narrow, Arial, sans-serif" font-weight="bold" font-size="55" text-anchor="middle" fill="#ed1c24" transform="scale(0.8, 1) translate(40,0)">POLYCAB</text>
+    <text x="160" y="85" font-family="Arial" font-size="10" text-anchor="middle" fill="#ed1c24" font-style="italic">Connection Zindagi Ka</text>
+</svg>

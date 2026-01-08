@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
+    <!-- Anchor Icon proxy -->
+    <path d="M50 40 L60 40 L55 50 Z" fill="#ed1c24" /> 
+    <rect x="53" y="25" width="4" height="20" fill="#ed1c24" />
+    <text x="170" y="50" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="40" text-anchor="middle" fill="#ed1c24">ANCHOR</text>
+    <text x="170" y="75" font-family="Arial, sans-serif" font-weight="bold" font-size="16" text-anchor="middle" fill="#000000">by Panasonic</text>
+</svg>

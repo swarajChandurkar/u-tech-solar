@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
+    <!-- Spinner Icon proxy -->
+    <circle cx="50" cy="50" r="15" fill="none" stroke="#ed1c24" stroke-width="4" />
+    <line x1="50" y1="30" x2="50" y2="70" stroke="#ed1c24" stroke-width="4" />
+    <line x1="30" y1="50" x2="70" y2="50" stroke="#ed1c24" stroke-width="4" />
+    
+    <text x="130" y="60" font-family="Arial, sans-serif" font-weight="bold" font-size="40" text-anchor="middle" fill="#231f20">vikram</text>
+    <text x="215" y="60" font-family="Arial, sans-serif" font-weight="bold" font-size="40" text-anchor="middle" fill="#ed1c24">solar</text>
+</svg>
